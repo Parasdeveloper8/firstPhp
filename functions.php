@@ -10,5 +10,6 @@
    }
 
    $greetings = greet("paras");
+   //Nested function will only work if parent function is called first
    echo $greetings;
 ?>

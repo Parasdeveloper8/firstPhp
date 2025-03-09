@@ -19,4 +19,14 @@
       $v++;
    }while($v < 5);
 
+   $users = ["abc","def","ghi"];
+   foreach($users as $x){
+      echo $x;
+      echo "<br/>";
+   }
+   //you can use continue and break in loop
+   //second way to use foreach loop
+   foreach($users as $v):
+      echo "<h1>$v</h1>";
+      endforeach
 ?>
