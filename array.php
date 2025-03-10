@@ -39,10 +39,30 @@
    //echo $val;
 
    //loop through multidimensional array
+   echo "<table border=1>";
+   echo "<tbody>";
    for($i=0;$i < count($multi);$i++){
+      echo "<tr>";
       for($j=0;$j < count($multi[$i]);$j++){
+         echo "<td>";
          echo $multi[$i][$j];
-         echo "<br/>";
+         echo "</td>";
       }
+      echo "</tr>";
    }
+   echo "</tbody>";
+   echo "</table>";
+
+   //Multidimensional associative array
+   $users = [
+      ["name"=>"pras","age"=>15],
+      ["name"=>"prash","age"=>16],
+      ["name"=>"prask","age"=>17]
+   ];
+   foreach($users as $user):
+      foreach($user as $key => $value):
+        echo "$key : $value";
+        echo "<br/>";
+      endforeach;
+   endforeach;
 ?>
